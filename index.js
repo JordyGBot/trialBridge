@@ -1,0 +1,15 @@
+const Discord = require('discord.js');
+const client = new Discord.Client();
+
+client.on('ready', () => {
+    client.user.setActivity('!commands', {type: 'WATCHING'});
+});
+
+client.on('message', msg => {
+    if (!msg.content.startsWith(process.env.PREFIX)) return;
+    const command = msg.content.split(' ')[0].substr(process.env.PREFIX.length);
+    const args = msg.content.split(' ').slice(1).join(' ');
+    if (command === 'guide') return msg.channel.send('No.');
+});
+
+client.login(process.env.BOT_TOKEN);
