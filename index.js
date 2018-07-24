@@ -10,7 +10,7 @@ client.on('message', message => {
     let messageArray = message.content.split(' ');
     let command = messageArray[0];
     let args = messageArray.slice(1);
-    let runCmd = comand.slice(process.env.PREFIX.length);
+    let runCmd = command.slice(process.env.PREFIX.length);
     if (runCmd === 'hello') return message.channel.send('Hi!');
 });
 
