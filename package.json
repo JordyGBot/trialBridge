@@ -1,0 +1,23 @@
+{
+  "name": "trialBot",
+  "version": "0.0.1",
+  "description": "Trial + Error",
+  "main": "index.js",
+  "engines": {
+    "node": "8.x",
+    "npm": "*"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "heroku",
+    "discord.js"
+  ],
+  "author": "JordyGBot",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^11.3.0"
+  }
+}
